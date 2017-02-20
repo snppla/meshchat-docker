@@ -21,5 +21,5 @@ ENV LOCAL_NODE=localnode
 VOLUME ["/var/www/html/meshchat/db/"]
 
 CMD sed -i 's|.*$pi_zone.*|our $pi_zone = '"\"$MESH_ZONE\";|" /usr/lib/cgi-bin/meshchatconfig.pm  && \
- sed -i 's|.*$local_meshchat_node.*|our $$local_meshchat_node = '"\"$LOCAL_NODE\";|" /usr/lib/cgi-bin/meshchatconfig.pm && \
+ sed -i 's|.*$local_meshchat_node.*|our $local_meshchat_node = '"\"$LOCAL_NODE\";|" /usr/lib/cgi-bin/meshchatconfig.pm && \
  echo nameserver $LOCAL_NODE > /etc/resolv.conf && apache2ctl start && meshchatsync
