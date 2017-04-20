@@ -1,6 +1,6 @@
 from debian
 
-RUN apt-get -y update && apt-get upgrade
+RUN apt-get -y update && apt-get -y upgrade
 
 RUN apt-get install -y git curl apache2 binutils
 
