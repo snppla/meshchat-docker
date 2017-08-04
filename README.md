@@ -1,6 +1,6 @@
 # meschat-docker
 
-## Create a aredn meshchat server using docker
+## Create an aredn meshchat server using docker
 
 ## Instructions
 Use Jacob's [instructions](http://www.trevorsbench.com/meshchat-messaging-for-mesh-networks/) for installing the API package on your aredn node
@@ -20,5 +20,5 @@ Set the hostname to match your aredn dns name
 Set the zone. By default it is set to MeshChat
 
 ### `LOCAL_NODE`
-Set the ip address of the aredn node
+Set the ip address of the local aredn node
 
