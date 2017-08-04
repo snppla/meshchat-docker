@@ -7,7 +7,11 @@ Use Jacob's [instructions](http://www.trevorsbench.com/meshchat-messaging-for-me
 
 ## Example of docker run 
 
-docker run --rm  -e "LOCAL_NODE=192.168.50.2" -e "MESH_ZONE=MeshChat" -h kf7ztb.local.mesh -p 9050:80 snppla/meshchat-docker
+docker run -d -e "LOCAL_NODE=192.168.50.2" -e "MESH_ZONE=MeshChat" -h kf7ztb.local.mesh -p 9050:80 -v $PWD/meshchat/db:/var/www/html/meshchat/db/ snppla/meshchat-docker
+
+## Volume
+
+Map your volume to /var/www/html/meshchat/db/ to keep a persitent copy of the database
 
 ## Hostname
 
