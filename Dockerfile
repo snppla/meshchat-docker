@@ -11,7 +11,7 @@ RUN git clone https://github.com/tpaskett/meshchat.git
 WORKDIR /root/meshchat
 
 RUN ./build
-RUN dpkg -i meshchat_1.0_all.deb
+RUN dpkg -i meshchat_*_all.deb
 
 EXPOSE 80
 
